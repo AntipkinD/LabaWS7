@@ -4,9 +4,9 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        SomeClass<double> somecl = new(7, 14, 88, 49.5, 11, 16, 12, 78);
-        SomeClass<int> somecl1 = new();
-        SomeClass<string> somecl2 = new();
+        SomeClass<double> somecl = new(7, 1, 88, 49.5, 11, 16, 12, 78);
+        SomeClass<int> somecl1 = new(3, 43, 3);
+        SomeClass<string> somecl2 = new(2, "f", "pay respect");
 
         SomeClass<double>.toAdd(somecl, 45);
         Console.WriteLine("Длина массива");
