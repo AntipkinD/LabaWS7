@@ -11,7 +11,7 @@ namespace LabaWS7
         protected T[] somemass;
         public SomeClass()
         {
-            this.somemass = new T[3];
+            this.somemass = new T[0];
         }
         public SomeClass(int length, params T[] values)
         {
@@ -70,5 +70,20 @@ namespace LabaWS7
         {
             return someclass.somemass.Length;
         }
+        public static void Registration(Login<T> logins, Password<T> passwords, T login, T password)
+        {
+            toAdd(logins, login);
+            toAdd(passwords, password);
+        }
     }
+    internal class Login<T> : SomeClass<T>
+    {
+        public Login() : base() { }
+
+    }
+    internal class Password<T> : SomeClass<T>
+    {
+        public Password() : base() { }
+    }
+    
 }

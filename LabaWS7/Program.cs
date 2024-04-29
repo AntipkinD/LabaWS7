@@ -4,7 +4,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        SomeClass<double> somecl = new(7, 1, 88, 49.5, 11, 16, 12, 78);
+        /*SomeClass<double> somecl = new(7, 1, 88, 49.5, 11, 16, 12, 78);
         SomeClass<int> somecl1 = new(3, 43, 3);
         SomeClass<string> somecl2 = new(2, "f", "pay respect");
 
@@ -20,6 +20,10 @@ internal class Program
         Console.WriteLine("Массив с удалением");
         SomeClass<double>.toDelete(somecl, 5);
         Console.WriteLine("Элемент массива с удалением номер 5");
-        Console.WriteLine(SomeClass<double>.getByIndex(somecl, 5));
+        Console.WriteLine(SomeClass<double>.getByIndex(somecl, 5));*/
+        Login<string> logins = new();
+        Password<string> passwords = new();
+        SomeClass<string>.Registration(logins, passwords, "Ignat2008", "pasdvbcuejxo878294e");
+        SomeClass<string>.Registration(logins, passwords, "Sereja!989", "netarakan231");
     }
 }
