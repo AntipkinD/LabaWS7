@@ -19,7 +19,7 @@ internal class Program
         Console.WriteLine(SomeClass<double>.getByIndex(somecl, 5));
         Console.WriteLine("Массив с удалением");
         SomeClass<double>.toDelete(somecl, 5);
-        Console.WriteLine("Элемент массива с удалением 5");
+        Console.WriteLine("Элемент массива с удалением номер 5");
         Console.WriteLine(SomeClass<double>.getByIndex(somecl, 5));
     }
 }
